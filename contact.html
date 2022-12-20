@@ -26,7 +26,8 @@
     <title>Portfolio-Contact</title>
   </head>
   <body>
-    <div class="main">
+    <main>
+      <!--Navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand">Contact</a>
@@ -64,105 +65,132 @@
           </div>
         </div>
       </nav>
-      <div class="content">
-        <h2>Inschrijf formulier</h2>
-        <form action="#" method="post">
-          <div>
-            <label for="IPsurname">Voornaam</label><br />
-            <input
-              type="text"
-              name="IPsurname"
-              id="IPsurname"
-              placeholder="Voornaam"
-            />
+      <div class="container">
+        <div class="content">
+          <!--Formulier-->
+          <div class="p-4 my-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <form action="#" method="post">
+                <h2 class="text-center">Contact formulier</h2>
+                <!--Voornaam-->
+                <div class="mb-3">
+                  <label for="IPsurname" class="form-label">Voornaam</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="IPsurname"
+                    placeholder="voornaam"
+                  />
+                </div>
+                <!--Naam-->
+                <div class="mb-3">
+                  <label for="IPname" class="form-label">naam</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="IPname"
+                    placeholder="naam"
+                  />
+                </div>
+                <!--Email-->
+                <div class="mb-3">
+                  <label for="IPmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="IPmail"
+                    placeholder="naam@voorbeeld.be"
+                  />
+                </div>
+                <!--Onderwerp bericht-->
+                <div class="mb-3">
+                  <label for="IPsubject" class="form-label">Onderwerp</label>
+                  <input type="text" class="form-control" id="IPsubject" />
+                </div>
+                <!--Tekst bericht-->
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Bericht</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-auto text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Verstuur
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div>
-            <label for="IPname">Naam</label><br />
-            <input type="text" name="IPname" id="IPname" placeholder="Naam" />
-          </div>
-          <div>
-            <label for="IPmail">Email</label><br />
-            <input type="text" name="IPmail" id="IPmail" />
-          </div>
-          <div>
-            <label for="IPonderwerp">Onderwerp</label><br />
-            <input type="text" name="IPonderwerp" id="IPonderwerp" />
-          </div>
-          <div>
-            <textarea
-              name="IPmessage"
-              id="IPmessage"
-              cols="30"
-              rows="10"
-              placeholder="Uw Bericht"
-            ></textarea>
-          </div>
-          <br />
-          <input type="submit" value="Verstuur" />
-        </form>
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="mailto:r0834599@student.thomasmore.be">mail</a></li>
-          <li>
-            <a href="https://www.instagram.com/mau.engelen/?theme=dark"
-              >Instagram</a
+
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:r0834599@student.thomasmore.be">mail</a></li>
+            <li>
+              <a href="https://www.instagram.com/mau.engelen/?theme=dark"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="https://twitter.com/MautjeEngelen">Twitter</a></li>
+            <li><a href="https://www.pexels.com/@maurice32/">Pexels</a></li>
+          </ul>
+        </div>
+        <footer
+          class="d-flex flex.wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted"
+              >&copy;Copyright - Maurice Engelen 2022</span
             >
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="https://twitter.com/MautjeEngelen">Twitter</a></li>
-          <li><a href="https://www.pexels.com/@maurice32/">Pexels</a></li>
-        </ul>
-      </div>
-      <footer
-class="d-flex flex.wrap justify-content-between align-items-center py-3 my-4 border-top"
->
-<div class="col-md-4 d-flex align-items-center">
-  <span class="mb-3 mb-md-0 text-muted"
-  >&copy;Copyright - Maurice Engelen 2022</span
-  >
-</div>
-<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-  <li class="ms-3">
-    <a class="text-muted" href="mailto:r0834599@student.thomasmore.be"
-    ><i class="bi bi-envelope-fill"></i
-      ></a>
-    </li>
-    
-    <li>
-      <a
-      class="text-muted"
-      href="https://www.instagram.com/mau.engelen/?theme=dark"
-      ><i class="bi bi-instagram"></i
-        ></a>
-      </li>
-      <li>
-        <a
-        class="text-muted"
-        href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
-        ><i class="bi bi-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a class="text-muted" href="https://twitter.com/MautjeEngelen"
-          ><i class="bi bi-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a class="text-muted" href="https://www.pexels.com/@maurice32/"
-            ><i class="bi bi-camera-fill"></i
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="mailto:r0834599@student.thomasmore.be"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="text-muted"
+                href="https://www.instagram.com/mau.engelen/?theme=dark"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-muted"
+                href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://twitter.com/MautjeEngelen"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://www.pexels.com/@maurice32/"
+                ><i class="bi bi-camera-fill"></i
               ></a>
             </li>
           </ul>
         </footer>
-    </div>
+      </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
-      ></script>
+    ></script>
   </body>
 </html>
