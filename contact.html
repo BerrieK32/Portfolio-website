@@ -74,43 +74,49 @@
                 <h2 class="text-center">Contact formulier</h2>
                 <!--Voornaam-->
                 <div class="mb-3">
-                  <label for="IPsurname" class="form-label">Voornaam</label>
+                  <label for="IPsurname" class="form-label">Voornaam:</label>
                   <input
                     type="text"
                     class="form-control"
                     id="IPsurname"
                     placeholder="voornaam"
+                    required
                   />
                 </div>
                 <!--Naam-->
                 <div class="mb-3">
-                  <label for="IPname" class="form-label">naam</label>
+                  <label for="IPname" class="form-label">naam:</label>
                   <input
                     type="text"
                     class="form-control"
                     id="IPname"
                     placeholder="naam"
+                    required
                   />
                 </div>
                 <!--Email-->
                 <div class="mb-3">
-                  <label for="IPmail" class="form-label">Email</label>
-                  <input
+                  <label for="IPmail" class="form-label">Email:</label>
+                  <div class="input-group has-validation">
+
+                    <span class="input-group-text">@</span>
+                    <input
                     type="email"
                     class="form-control"
                     id="IPmail"
                     placeholder="naam@voorbeeld.be"
-                  />
+                    />
+                  </div>
                 </div>
                 <!--Onderwerp bericht-->
                 <div class="mb-3">
-                  <label for="IPsubject" class="form-label">Onderwerp</label>
+                  <label for="IPsubject" class="form-label">Onderwerp:</label>
                   <input type="text" class="form-control" id="IPsubject" />
                 </div>
                 <!--Tekst bericht-->
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label"
-                    >Bericht</label
+                    >Bericht:</label
                   >
                   <textarea
                     class="form-control"
@@ -118,31 +124,36 @@
                     rows="3"
                   ></textarea>
                 </div>
+                <!--Verstuur button-->
                 <div class="col-auto text-center">
-                  <button type="submit" class="btn btn-primary btn-lg">
+                  <button type="submit" class="w-100 btn btn-primary btn-lg">
                     Verstuur
                   </button>
                 </div>
               </form>
             </div>
           </div>
-
-          <h2>Contact</h2>
-          <ul>
-            <li><a href="mailto:r0834599@student.thomasmore.be">mail</a></li>
-            <li>
-              <a href="https://www.instagram.com/mau.engelen/?theme=dark"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a href="https://twitter.com/MautjeEngelen">Twitter</a></li>
-            <li><a href="https://www.pexels.com/@maurice32/">Pexels</a></li>
-          </ul>
+          <!--Contact block-->
+          <div class="p-4 my-4 bg-dark rounded-3">
+            <div class="container-fluid py-1 text-center text-white">
+              <h2>Contact</h2>
+              <ul>
+                <li><a href="mailto:r0834599@student.thomasmore.be">mail</a></li>
+                <li>
+                  <a href="https://www.instagram.com/mau.engelen/?theme=dark"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/maurice-engelen-80518b17b/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a href="https://twitter.com/MautjeEngelen">Twitter</a></li>
+                <li><a href="https://www.pexels.com/@maurice32/">Pexels</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <footer
           class="d-flex flex.wrap justify-content-between align-items-center py-3 my-4 border-top"
