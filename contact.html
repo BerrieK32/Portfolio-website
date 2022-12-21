@@ -110,13 +110,22 @@
                 </div>
                 <!--Onderwerp bericht-->
                 <div class="mb-3">
-                  <label for="IPsubject" class="form-label">Onderwerp:</label>
-                  <input type="text" class="form-control" id="IPsubject" />
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Keuzelijst
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">C#</a></li>
+                      <li><a class="dropdown-item" href="#">HTML 5</a></li>
+                      <li><a class="dropdown-item" href="#">Python</a></li>
+                      <li><a class="dropdown-item" href="#">Databases</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <!--Tekst bericht-->
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label"
-                    >Bericht:</label
+                    >Vraag:</label
                   >
                   <textarea
                     class="form-control"
